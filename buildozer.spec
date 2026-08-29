@@ -3,7 +3,7 @@
 # (str) Title of your application
 title = Snake Game
 
-# (str) Package name (no spaces or special characters)
+# (str) Package name
 package.name = snakegame
 
 # (str) Package domain (needed for android packaging)
@@ -19,13 +19,12 @@ source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 
 # (list) Application requirements
-# Crucial: Must include python3 and kivy
 requirements = python3,kivy
 
 # (str) Supported orientation
 orientation = portrait
 
-# (bool) Indicate if the application should be fullscreen or not
+# (bool) Fullscreen application
 fullscreen = 1
 
 # (list) Permissions
@@ -37,6 +36,12 @@ android.api = 33
 # (int) Minimum API supported
 android.minapi = 21
 
+# (str) Android NDK version
+android.ndk = 25b
+
+# (bool) Auto accept SDK license
+android.accept_sdk_license = True
+
 # (str) Android NDK architecture to build for
 android.archs = arm64-v8a, armeabi-v7a
 
@@ -45,5 +50,5 @@ android.archs = arm64-v8a, armeabi-v7a
 # (int) Log level (0 = error only, 1 = info, 2 = debug)
 log_level = 2
 
-# (int) Display warning if buildozer is run as root (0 = false)
+# (int) Display warning if buildozer is run as root
 warn_on_root = 1
